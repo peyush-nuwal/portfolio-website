@@ -2,10 +2,10 @@
 
 This is my personal portfolio website built to showcase my skills, projects, and experience as a developer. The website is built with a focus on smooth animations, responsive design, and modern user interface practices.
 
-![Screenshot 1](./src/assets/screenshots/screenshot-1.png)
-![Screenshot 2](./src/assets/screenshots/screenshot-2.png)
-![Screenshot 3](./src/assets/screenshots/screenshot-3.png)
-![Screenshot 4](./src/assets/screenshots/screenshot-4.png)
+![Screenshot 1](./src/assets/screenshots/Screenshot-1.png)
+![Screenshot 2](./src/assets/screenshots/Screenshot-2.png)
+![Screenshot 3](./src/assets/screenshots/Screenshot-3.png)
+![Screenshot 4](./src/assets/screenshots/Screenshot-4.png)
 
 ## Table of Contents
 - [Features](#features)
