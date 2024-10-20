@@ -5,6 +5,7 @@ This is my personal portfolio website built to showcase my skills, projects, and
 ![Screenshot 1](./src/assets/screenshots/screenshot-1.png)
 ![Screenshot 2](./src/assets/screenshots/screenshot-2.png)
 ![Screenshot 3](./src/assets/screenshots/screenshot-3.png)
+![Screenshot 4](./src/assets/screenshots/screenshot-4.png)
 
 ## Table of Contents
 - [Features](#features)
