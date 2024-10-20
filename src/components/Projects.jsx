@@ -105,9 +105,9 @@ const Projects = () => {
   
   
   return (
-    <div className='projects w-full  md:h-screen pt-[5%]  px-3 md:px-10'> 
+    <div className='projects w-full  lg:h-screen pt-[5%]  px-3 lg:px-10'> 
        <div className='w-full   overflow-hidden '>
-       <h1 className='projects-title  text-5xl md:text-7xl font-medium overflow-hidden'> 
+       <h1 className='projects-title  text-5xl lg:text-7xl font-medium overflow-hidden'> 
         {['A', 'b', 'o', 'u', 't', '\u00A0', 'm', 'e'].map((c, idx) => (
             <span key={idx} className='  inline-block'>{c}</span>
           ))}
@@ -117,10 +117,10 @@ const Projects = () => {
      </div>
 
 
-     <div className='divide-y-2 divide-zinc-300 mt-5 md:mt-10 relative'>
+     <div className='divide-y-2 divide-zinc-300 mt-5 lg:mt-10 relative'>
       {projects.map((item,idx)=>(
        
-          <div key={item.id} ref={(el) => (projectRefs.current[idx] = el)}  className='project-item text-3xl md:text-5xl py-5  md:py-7 px-1 md:px-4 cursor-pointer hover:text-zinc-500 relative '>
+          <div key={item.id} ref={(el) => (projectRefs.current[idx] = el)}  className='project-item text-3xl lg:text-5xl py-5  lg:py-7 px-1 lg:px-4 cursor-pointer hover:text-zinc-500 relative '>
             {item.title}
             <div  className='project-img opacity-0 w-[200px] h-[150px] bg-red-400 absolute top-0 left-0 overflow-hidden pointer-events-none z-[9999]' > 
               <img src={item.src} alt="" className='w-full h-full  object-cover object-center pointer-events-none'/>

@@ -59,8 +59,8 @@ const Experience = () => {
   
 
   return (
-    <div className='experience w-full h-screen  pt-[5%] px-3 md:px-10'>
-       <h1 className='experience-title text-5xl md:text-7xl font-medium overflow-hidden'> 
+    <div className='experience w-full h-screen  pt-[5%] px-3 lg:px-10'>
+       <h1 className='experience-title text-5xl lg:text-7xl font-medium overflow-hidden'> 
         {['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n','c','e'].map((c, idx) => (
             <span key={idx} className='  inline-block'>{c}</span>
           ))}
@@ -70,9 +70,9 @@ const Experience = () => {
       <div className='exp-bar w-[2px] h-0 rounded-full bg-black  mt-5 ml-[5%] relative'>
           <div className='exp-dot absolute top-[25%] left-1/2  -translate-x-1/2 w-3 h-3 bg-black rounded-full '/> 
         </div>
-        <div className='company absolute top-[27%] left-[15%] md:left-[7%] h-fit '>
-          <h3 className='text-2xl md:text-3xl'>Marknox <span className='text-xl'> (2024 - present)</span></h3>
-          <p className=' md:text-lg'> i will join soon cause they gonna hire me</p>
+        <div className='company absolute top-[27%] left-[15%] lg:left-[7%] h-fit '>
+          <h3 className='text-2xl lg:text-3xl'>Marknox <span className='text-xl'> (2024 - present)</span></h3>
+          <p className=' lg:text-lg'> i will join soon cause they gonna hire me</p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { IoIosArrowRoundForward } from "react-icons/io";
-const Nav = () => {
+const Nav = ({handleScroll}) => {
   const buttonDivRef = useRef();
   const buttonRef = useRef();
   const navOption = ["Home", "About", "Experience",'Projects', "Contact"];
@@ -80,24 +80,28 @@ const Nav = () => {
       <button onClick={()=>setShowNav(true)} className=" text-xl font-medium">Menu</button>
        
           <div className="Nav absolute h-0 top-0 left-0 w-full  bg-offwhite  overflow-hidden">
-        <div className="w-full h-[90%] flex flex-col md:flex-row justify-end ">
-          <button  onClick={()=>setShowNav(false)} className="text-xl font-medium absolute right-6 md:right-12 top-16 md:top-10">
+        <div className="w-full h-[90%] flex flex-col lg:flex-row justify-end ">
+          <button  onClick={()=>setShowNav(false)} className="text-xl font-medium absolute right-6 lg:right-12 top-16 lg:top-10">
             Close
           </button>
-          <div className="nav-left  w-full md:w-1/2  h-1/2  md:h-[90%]  pl-3 md:pl-10 pt-20  ">
-          <div className="w-3/6 md:w-2/5  h-2/3 bg-slate-900 ">
+          <div className="nav-left  w-full lg:w-1/2  h-1/2  lg:h-[90%]  pl-3 lg:pl-10 pt-20  ">
+          <div className="w-3/6 lg:w-2/5  h-2/3 bg-slate-900 ">
           <video src="https://prismic-io.s3.amazonaws.com/rejouice/3c8eec5e-c857-4fd3-9add-a9e6035a160c_RJ-2.0-Video+background+5_1+%281%29.mp4" autoPlay loop muted className=" w-full h-full object-contain objce"></video>
           </div>
           
           </div>
-          <div className="nav-right w-1/2  md:h-full  pl-3 md:pl-10 pt-3 md:pt-20 ">
+          <div className="nav-right w-1/2  lg:h-full  pl-3 lg:pl-10 pt-3 lg:pt-20 ">
             <ul>
               {navOption.map((item, index) => (
                 <motion.h1
                   key={index}
                   initial="initial"
                   whileHover="hover"
-                  className=" text-4xl md:text-6xl font-medium h-[40px] md:h-[60px] mb-[2px] overflow-hidden"
+                  className=" text-4xl lg:text-6xl font-medium h-[40px] lg:h-[60px] mb-[2px] overflow-hidden"
+                  onClick={() => {
+                    handleScroll(item);  
+                    setShowNav(false);  
+                  }}
                 >
                   <motion.span
                     variants={hoverVariants}
@@ -117,12 +121,12 @@ const Nav = () => {
             </ul>
             <button
               ref={buttonRef}
-              className="relative border-2 border-black rounded-full px-3 md:px-6  md:py-1 overflow-hidden z-10 mt-4 bg-transparent"
+              className="relative border-2 border-black rounded-full px-3 lg:px-6  lg:py-1 overflow-hidden z-10 mt-4 bg-transparent"
             >
               <motion.h1
                 initial="initial"
                 whileHover="hover"
-                className="text-2xl md:text-3xl font-medium h-10 mb-0 md:mb-[2px] overflow-hidden bg-transparent "
+                className="text-2xl lg:text-3xl font-medium h-10 mb-0 lg:mb-[2px] overflow-hidden bg-transparent "
                 whileTap={{ scale: 0.95 }}
               >
                 <motion.span variants={hoverVariants} className="block h-full">
@@ -138,19 +142,19 @@ const Nav = () => {
               </motion.h1>
               <div
                 ref={buttonDivRef}
-                className= "hidden md:block bg-black w-0 h-full absolute top-0 left-0  -z-10"
+                className= "hidden lg:block bg-black w-0 h-full absolute top-0 left-0  -z-10"
               />
             </button>
           </div>
         </div>
-        <div className=" w-full h-[10%]  bg-offwhite flex justify-end px-10 border-t-2 border-black overflow-hidden mt-2 md:mt-0 ">
+        <div className=" w-full h-[10%]  bg-offwhite flex justify-center  lg:justify-end px-4 lg:px-10 border-t-2 border-black overflow-hidden mt-2 lg:mt-0 ">
           <a
             href="https://www.instagram.com/nuwal_piyush/"
             className="flex gap-1 items-center text-lg  mr-2 group hover:scale-[1.2] duration-500"
           >
             Instagram
             <span className="-rotate-45 group-hover:rotate-0 duration-500">
-              <IoIosArrowRoundForward className="text-3xl " />
+              <IoIosArrowRoundForward className="text-xl lg:text-3xl " />
             </span>
           </a>
           <a
@@ -159,7 +163,7 @@ const Nav = () => {
           >
             Linkedin
             <span className="-rotate-45 group-hover:rotate-0 duration-500">
-              <IoIosArrowRoundForward className="text-3xl" />
+              <IoIosArrowRoundForward className="text-xl lg:text-3xl" />
             </span>
           </a>
           <a
@@ -168,7 +172,7 @@ const Nav = () => {
           >
             Github
             <span className="-rotate-45 group-hover:rotate-0 duration-500">
-              <IoIosArrowRoundForward className="text-3xl" />
+              <IoIosArrowRoundForward className="text-xl lg:text-3xl" />
             </span>
           </a>
         </div>
