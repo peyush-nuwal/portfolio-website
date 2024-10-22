@@ -58,7 +58,7 @@ const Projects = () => {
       x:"-300px",
       opacity:0,
      duration:1,
-     delay:0.5,
+     delay:1.3,
       stagger:0.2,
       scrollTrigger:{
         trigger:'.projects',
