@@ -35,7 +35,7 @@ const Footer = ({handleScroll}) => {
         scrollTrigger:{
          trigger:'.footer',
        
-         start:'40% 50%',
+         start:'20% 50%',
          toggleActions: "play reverse play reverse",
         }
       })
@@ -45,8 +45,8 @@ const Footer = ({handleScroll}) => {
        delay:0.5,
         scrollTrigger:{
          trigger:'.footer',
-        
-         start:'20% 50%',
+          
+         start:'30% 50%',
          toggleActions: "play reverse play reverse",
         }
       })
